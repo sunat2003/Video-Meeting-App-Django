@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Room</title>
+    <link rel="stylesheet" href="{% static 'css/join_meeting.css' %}">
+</head>
+<body>
+    <div class="join-room-div">
+        <form method="post" class="join-room-form">
+            {% csrf_token %}
+            <div class="input-div">
+                <label>Room Id</label>
+                <input type="text" placeholder="Enter room id" name="roomid">
+            </div>
+            <button class="join-btn" type="submit">Join Now</button>
+        </form>
+    </div> 
+</body>
+</html>

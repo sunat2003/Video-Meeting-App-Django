@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Noto Sans'
+}
+
+.home-div{
+    height:100vh;
+    width:100%;
+    background-image:url("../image/banner.png");
+    background-size:cover;
+    background-position: center;
+}
+.shade{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:0 20px;
+}
+.shade h1{
+    color:#d7d2d2;
+    font-size:50px;
+    font-weight:300;
+    text-align:center;
+}
+p{
+    color:gray;
+    margin:20px 0;
+    text-align:center;
+}
+span{
+    color:greenyellow;
+}
+
+.containts-div{
+    width:350px;
+    display:flex;
+    padding:30px 0;
+    column-gap:20px;
+    justify-content:center;
+}
+
+.home-btn{
+    width:40%;
+    padding:10px 20px;
+    border:none;
+    outline:none;
+    background:rgb(24, 133, 157);
+    border-radius:5px;
+    font-size:20px;
+}
+.signup{
+    background:rgb(24, 157, 119);
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+.copy-r{
+    position:relative;
+    bottom: 0px;;
+}
+
+
+
+

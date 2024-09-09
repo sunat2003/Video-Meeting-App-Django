@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+  <body>
+    <div class="register-div">
+      <p style="color:red; margin:10px">{{ msg }}</p>
+      <form method="POST" class="register-form">
+        {% csrf_token %}
+        <h2 class="register-heading">Login Here</h2>
+        <div class="reg-input">
+          <label>Email</label>
+          <input type="email" placeholder="Enter Userid" name="email" />
+        </div>
+        <div class="reg-input">
+          <label>Password</label>
+          <input type="password" placeholder="Enter Password" name="password" />
+        </div>
+        <p>I have no account <a href="/register">Create Account</a></p>
+        <button class="btn-register">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

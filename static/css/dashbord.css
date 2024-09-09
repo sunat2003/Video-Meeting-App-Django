@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+.dashbord-div{
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+}
+.dashbord-div h1{
+    text-align:center;
+}
+.contraint-div{
+    width:350px;
+    display:flex;
+    flex-direction: column;
+    row-gap:10px;
+    margin-top:20px;
+}
+
+.ds-btn{
+    padding:10px 20px;
+    font-size: 20px;
+    border:none;
+    outline:none;
+    background-color: rgb(165, 59, 59);
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+span{
+    color:green;
+}

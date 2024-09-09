@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  </head>
+  <body>
+    <div class="register-div">
+      <p style="color:red; margin:10px">{{ msg }}</p>
+      <form method="POST" class="register-form">
+        {% csrf_token %}
+        <h2 class="register-heading">Register Now</h2>
+        <div class="reg-input">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter First Name" name="first_name" />
+        </div>
+        <div class="reg-input">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter Last Name" name="last_name" />
+        </div>
+        <div class="reg-input">
+          <label>Email</label>
+          <input type="email" placeholder="Enter Userid" name="email" />
+        </div>
+        <div class="reg-input">
+          <label>Password</label>
+          <input type="password" placeholder="Enter Password" name="password1" />
+        </div>
+        <div class="reg-input">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm Password" name="password2" />
+        </div>
+        <p>I already have an account <a href="/login">Login here</a></p>
+        <button class="btn-register" type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
